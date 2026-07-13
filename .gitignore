@@ -1,0 +1,63 @@
+# Vivado generated files
+*.jou
+*.log
+*.pb
+*.str
+*.xpr
+.Xil/
+vivado_*.backup*/
+webtalk*.xml
+webtalk*.jou
+
+# Vivado project directories
+*/impl_1/
+*/synth_1/
+*/.cache/
+*/logs/
+*/reports/
+*/ip/
+*_wrapper*
+
+# Simulation files
+*.wdb
+*.vcd
+*.saif
+xsim.dir/
+*.sim/
+
+# Bitstream
+*.bit
+*.bin
+*.mcs
+
+# Cadence generated files
+xcelium.d/
+*.shm/
+simvision*/
+*.dsn
+*.trn
+*.err
+sim.log
+xrun.history
+xrun.key
+*.svwf
+
+# Genus generated files
+genus.cmd*
+genus.log*
+fv/
+results/
+innovus*/
+*.enc
+*.htm
+
+# Keep these — your actual work
+!*.v
+!*.sv
+!*.sdc
+!*.txt
+!*.py
+!*.gif
+!*.png
+!*.jpg
+!*.md

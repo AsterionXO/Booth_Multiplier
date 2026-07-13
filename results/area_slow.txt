@@ -1,0 +1,4 @@
+Instance Module  Cell Count  Cell Area  Net Area   Total Area   Wireload  
+--------------------------------------------------------------------------
+bm                      205   1642.473     0.000     1642.473 <none> (D)  
+

@@ -1,0 +1,33 @@
+                     Capture       Launch     
+        Clock Edge:+   10000            0     
+       Src Latency:+       0            0     
+       Net Latency:+       0 (I)        0 (I) 
+           Arrival:=   10000            0     
+                                              
+             Setup:-      78                  
+     Required Time:=    9922                  
+      Launch Clock:-       0                  
+         Data Path:-     761                  
+             Slack:=    9162                  
+
+#----------------------------------------------------------------------------------------
+# Timing Point   Flags    Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+#                                                      (fF)  (ps)  (ps)   (ps)  Location 
+#----------------------------------------------------------------------------------------
+  q_reg/CK       -       -      R     (arrival)     53    -     0     0       0    (-,-) 
+  q_reg/Q        -       CK->Q  F     DFFQX1        11 20.8    42   117     117    (-,-) 
+  g3414/Y        -       A->Y   R     CLKINVX1       8 13.7    43    43     160    (-,-) 
+  g3401__4319/Y  -       B->Y   F     MXI2XL         1  5.1    42    33     193    (-,-) 
+  g3298__7410/CO -       CI->CO F     ADDFX1         1  5.1    27    73     267    (-,-) 
+  g3290__6131/CO -       CI->CO F     ADDFX1         1  5.1    27    69     336    (-,-) 
+  g3234__8246/CO -       CI->CO F     ADDFX1         1  5.1    27    69     406    (-,-) 
+  g3229__1705/CO -       CI->CO F     ADDFX1         1  5.1    27    69     475    (-,-) 
+  g3225__1617/CO -       CI->CO F     ADDFX1         1  5.1    27    69     544    (-,-) 
+  g3221__6783/CO -       CI->CO F     ADDFX1         1  5.1    27    69     614    (-,-) 
+  g3217__8428/S  -       CI->S  R     ADDFXL         1  1.9    22    91     705    (-,-) 
+  g3213__6260/Y  -       C1->Y  F     AOI222XL       1  1.7   115    20     726    (-,-) 
+  g3212/Y        -       A->Y   R     INVXL          1  1.7    34    35     761    (-,-) 
+  A_reg[7]/D     <<<     -      R     DFFQX1         1    -     -     0     761    (-,-) 
+#----------------------------------------------------------------------------------------
+
+

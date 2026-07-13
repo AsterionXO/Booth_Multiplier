@@ -1,0 +1,38 @@
+ Group: clk
+     Startpoint: (R) q_reg/CK
+          Clock: (R) clk
+       Endpoint: (R) A_reg[7]/D
+          Clock: (R) clk
+
+                     Capture       Launch     
+        Clock Edge:+   10000            0     
+       Src Latency:+       0            0     
+       Net Latency:+       0 (I)        0 (I) 
+           Arrival:=   10000            0     
+                                              
+             Setup:-     206                  
+     Required Time:=    9794                  
+      Launch Clock:-       0                  
+         Data Path:-    2770                  
+             Slack:=    7024                  
+
+#----------------------------------------------------------------------------------------
+# Timing Point   Flags    Arc   Edge   Cell     Fanout Load Trans Delay Arrival Instance 
+#                                                      (fF)  (ps)  (ps)   (ps)  Location 
+#----------------------------------------------------------------------------------------
+  q_reg/CK       -       -      R     (arrival)     53    -     0     0       0    (-,-) 
+  q_reg/Q        -       CK->Q  F     DFFQX1        11 19.6   153   394     394    (-,-) 
+  g3451/Y        -       A->Y   R     CLKINVX1       8 12.9   129   136     530    (-,-) 
+  g3440__8428/Y  -       B->Y   F     MXI2XL         1  6.7   208   174     704    (-,-) 
+  g3336__6417/CO -       A->CO  F     ADDFX1         1  4.9    96   287     991    (-,-) 
+  g3328__1881/CO -       CI->CO F     ADDFX1         1  4.9    96   250    1241    (-,-) 
+  g3272__8246/CO -       CI->CO F     ADDFX1         1  4.9    96   250    1490    (-,-) 
+  g3267__1705/CO -       CI->CO F     ADDFX1         1  4.9    96   250    1740    (-,-) 
+  g3263__1617/CO -       CI->CO F     ADDFX1         1  4.9    96   250    1990    (-,-) 
+  g3259__6783/CO -       CI->CO F     ADDFX1         1  4.9    96   250    2240    (-,-) 
+  g3255__8428/S  -       CI->S  R     ADDFXL         1  1.8    82   342    2582    (-,-) 
+  g3251__6260/Y  -       C1->Y  F     AOI222XL       1  1.6   384    90    2672    (-,-) 
+  g3250/Y        -       A->Y   R     INVXL          1  1.6   111    98    2770    (-,-) 
+  A_reg[7]/D     <<<     -      R     DFFQX1         1    -     -     0    2770    (-,-) 
+#----------------------------------------------------------------------------------------
+
